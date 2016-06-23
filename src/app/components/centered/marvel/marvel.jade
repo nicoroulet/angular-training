@@ -1,0 +1,6 @@
+h1
+  | {{marvelCtrl.title}}
+div(ng-repeat='char in marvelCtrl.characters')
+  h2
+    | {{char.name}}
+  img(src="{{char.thumbnail.path}}.{{char.thumbnail.extension}}")

@@ -36,6 +36,16 @@ angular.module('app-bootstrap').config([
             controllerAs: 'comp2Ctrl'
           }
         }
+      })
+      .state('centered.marvel', {
+        url: '/marvel',
+        views: {
+          content: {
+            templateUrl: '../app/components/centered/marvel/marvel.html',
+            controller: 'MarvelController',
+            controllerAs: 'marvelCtrl'
+          }
+        }
       });
 
     $locationProvider.html5Mode(true);
